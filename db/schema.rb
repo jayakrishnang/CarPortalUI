@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20150818122230) do
   end
 
   create_table "cars", force: :cascade do |t|
-    t.string   "model_name",       limit: 255
+    t.string   "name",             limit: 255
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.integer  "body_type_id",     limit: 4
