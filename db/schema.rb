@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150818122230) do
+ActiveRecord::Schema.define(version: 20150819102941) do
 
   create_table "body_types", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -68,6 +68,20 @@ ActiveRecord::Schema.define(version: 20150818122230) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string   "title",            limit: 255
+    t.text     "comments",         limit: 65535
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.integer  "user_id",          limit: 4
+    t.integer  "car_id",           limit: 4
+    t.integer  "specification_id", limit: 4
+  end
+
+  add_index "reviews", ["car_id"], name: "index_reviews_on_car_id", using: :btree
+  add_index "reviews", ["specification_id"], name: "index_reviews_on_specification_id", using: :btree
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id", using: :btree
 
   create_table "roles", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -145,6 +159,9 @@ ActiveRecord::Schema.define(version: 20150818122230) do
   add_foreign_key "cars", "specifications"
   add_foreign_key "deliveries", "cars"
   add_foreign_key "deliveries", "specifications"
+  add_foreign_key "reviews", "cars"
+  add_foreign_key "reviews", "specifications"
+  add_foreign_key "reviews", "users"
   add_foreign_key "specifications", "fuel_types"
   add_foreign_key "specifications", "transmission_types"
   add_foreign_key "users", "roles"
