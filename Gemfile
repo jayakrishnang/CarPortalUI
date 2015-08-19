@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # gem 'safe_attributes'
+gem 'cancan'
 gem 'devise'
 gem 'rails_admin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
