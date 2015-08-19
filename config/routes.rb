@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/admin_panel', as: 'rails_admin'
   devise_for :users
   get 'user/index'
+
+
+    get 'admin' => 'admin#dashboard'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -11,7 +14,11 @@ Rails.application.routes.draw do
    root 'user#index'
    get 'booking/payment' => 'booking#payment'
    resources :booking
-   
+
+
+
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
