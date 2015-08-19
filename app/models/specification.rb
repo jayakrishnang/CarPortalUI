@@ -4,4 +4,5 @@ class Specification < ActiveRecord::Base
   has_many :deliveries
   belongs_to :fuel_type
   belongs_to :transmission_type
+  has_many :reviews
 end
