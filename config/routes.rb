@@ -15,14 +15,6 @@ Rails.application.routes.draw do
    get 'booking/payment' => 'booking#payment'
    resources :booking
 
-<<<<<<< HEAD
-
-
-
-
-=======
-   
->>>>>>> bb3f4518498f0f98685b7b28628f666c12375a5f
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
