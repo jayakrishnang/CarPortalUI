@@ -1,4 +1,4 @@
-class CarController < ApplicationController
+class CarsController < ApplicationController
   def index
   end
 
@@ -8,6 +8,7 @@ class CarController < ApplicationController
   def search
   end
 
+  
   def compare
   end
 end

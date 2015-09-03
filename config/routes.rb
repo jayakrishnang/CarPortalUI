@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     get 'admin' => 'admin#dashboard'
 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
    resources :reviews
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
    root 'user#index'
    get 'booking/payment' => 'booking#payment'
    resources :booking
-
+  get 'cars/search' => 'cars#search'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

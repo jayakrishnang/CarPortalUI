@@ -1,2 +1,84 @@
-<h1>User#index</h1>
-<p>Find me in app/views/user/index.html.erb</p>
+<div  class="container"  >
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class = "carpic" >
+          <%= image_tag("index/bmw.jpeg") %>
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>BMW i8</h1>
+           <!--  <p>As the first sports car with the consumption and emission values of a compact car. The strength of the plug-in hybrid lies, among other factors, in the perfect synchronisation of electric motor and combustion engine, which makes itself apparent in maximum efficiency and dynamics on the road. </p> -->
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class = "carpic" >
+          <%= image_tag("index/audi.jpg") %>
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Audi R8</h1>
+            <!-- <p>The Audi R8 is a mid-engine, 2-seater super car, which uses Audi's trademark quattro permanent all-wheel drive system.The car is exclusively designed, developed, and manufacture+d by Audi AG's high performance private subsidiary company,</p> -->
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class = "carpic" >
+          <%= image_tag("index/duster.jpeg") %>
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Renault Duster Los Pumas </h1>
+    <!--           <p>The Renault Duster Los Pumas Special Edition has been introduced in the Argentinian market.The main addition to the Los Pumas edition is the ‘Adventure Kit’. </p> -->
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><!-- /.carousel -->
+  <div class = "row" >   
+    <div class="col-sm-4">
+      <a href = "details.html">
+        <div class = "fill">
+          <%= image_tag("index/bmw.jpeg") %>
+        </div>
+      </a>
+  </div>
+  <div class="col-sm-4">
+    <a href = "details.html">
+      <div class = "fill">
+        <%= image_tag("index/duster.jpg") %>
+      </div>
+    </a>
+  </div>
+  <div class="col-sm-4">
+    <a href = "details.html">
+      <div class = "fill">  
+        <%= image_tag("index/honda.jpg") %>
+      </div>
+    </a>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-xs-5">.col-sm-4</div>
+    <div class="col-sm-6 col-md-4 col-xs-5">.col-sm-4</div>
+  <div class="col-md-4 col-xs-2">.col-sm-4</div>
+</div>
+</div>
