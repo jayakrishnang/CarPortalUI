@@ -16,6 +16,7 @@ Rails.application.routes.draw do
    get 'booking/payment' => 'booking#payment'
    resources :booking
   get 'cars/search' => 'cars#search'
+  get 'cars/compare' => 'cars#compare'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
