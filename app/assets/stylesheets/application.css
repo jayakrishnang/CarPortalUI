@@ -484,3 +484,8 @@ section.success a.active {
     border-radius: 6px 0 6px 6px;
 }
 /*end of multidropdown css*/
+
+.carousel-control {
+  padding-top:10%;
+  width:5%;
+}

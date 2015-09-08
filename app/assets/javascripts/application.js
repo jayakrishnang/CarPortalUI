@@ -29,3 +29,15 @@
     //         });
     // });
     // 
+
+    $(document).ready(function() {
+    $('#myCarousel1').carousel({
+    interval: 10000
+    })
+    
+    $('#myCarousel1').on('slid.bs.carousel', function() {
+        //alert("slid");
+    });
+    
+    
+});
