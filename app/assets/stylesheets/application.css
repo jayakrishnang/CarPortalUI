@@ -513,6 +513,7 @@ section.success a.active {
 /*end of multidropdown css*/
 
 .carousel-control {
+  font-size: 30px;
   padding-top:10%;
   width:5%;
 }
