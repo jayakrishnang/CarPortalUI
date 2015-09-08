@@ -1,8 +1,8 @@
 development:
   adapter: mysql2
-  database: car_ui
+  database: car_portal
   username: root
-  password: password
+  password: root
   host: localhost
 
 
