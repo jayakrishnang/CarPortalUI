@@ -32,7 +32,13 @@
 
     $(document).ready(function() {
     $('#myCarousel1').carousel({
-    interval: 10000
+    interval: false
+    })
+     $('#myCarousel2').carousel({
+    interval: false
+    })
+      $('#myCarousel3').carousel({
+    interval: false
     })
     
     $('#myCarousel1').on('slid.bs.carousel', function() {

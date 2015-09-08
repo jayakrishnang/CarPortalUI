@@ -71,7 +71,7 @@
         <input class="flexsearch--submit" type="submit" value="&#10140;"/>
       </form>
     </div>
-</div>
+    </div><!-- flexsearch -->
 
 
   <ul class="nav nav-tabs">
@@ -79,17 +79,17 @@
     <li><a data-toggle="tab" href="#menu1">Just Launched</a></li>
     <li><a data-toggle="tab" href="#menu2">Upcoming Launches</a></li>
   </ul>
-
-  <div class="tab-content">
+ <div class="tab-content">
   <div id="home" class="tab-pane fade in active">
-<div class="col-md-12">
+    <div class="col-md-12">
         <div class="well">
-            <div id="myCarousel1" class="carousel slide" interval= "false">
+            <div id="myCarousel1" class="carousel slide">
                 
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="item active">
                               <div class="row">
+
                             <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
@@ -97,6 +97,7 @@
                               </div>
                              </a>
                             </div>
+
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
@@ -104,6 +105,7 @@
                               </div>
                              </a>
                             </div>
+
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
@@ -111,9 +113,10 @@
                               </div>
                              </a>
                             </div>
-                        </div>
-                    </div>
-                    <!--/item-->
+
+                        </div> <!-- row -->
+                    </div><!--/item-->
+
                     <div class="item">
                       <div class="row">
                             <div class="col-sm-4"> 
@@ -138,7 +141,7 @@
                              </a>
                             </div>
                         </div>
-                     
+                    
                     </div>
                     <!--/item-->
                     <div class="item">
@@ -164,30 +167,27 @@
                               </div>
                              </a>
                             </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                </div>
-                <!--/carousel-inner--> 
+                        </div><!--/row-->
+                    </div><!--/item-->
+                </div><!--/carousel-inner--> 
                <a class="left carousel-control" href="#myCarousel1" data-slide="prev">‹</a>
 
                <a class="right carousel-control" href="#myCarousel1" data-slide="next">›</a>
-            </div>
-            <!--/myCarousel2-->
+            </div> <!--/myCarousel1-->
         </div>
         <!--/well-->
-    </div>
-    </div><!-- end of home -->
-    <div id="menu1" class="tab-pane fade">
-      <div class="col-md-12">
+    </div> <!--col md -->
+  </div><!-- end of home -->  
+  <div id="menu1" class="tab-pane fade in">
+    <div class="col-md-12">
         <div class="well">
-            <div id="myCarousel2" class="carousel slide" interval= "false">
+            <div id="myCarousel2" class="carousel slide">
                 
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="item active">
                               <div class="row">
+
                             <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
@@ -195,6 +195,7 @@
                               </div>
                              </a>
                             </div>
+
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
@@ -202,6 +203,7 @@
                               </div>
                              </a>
                             </div>
+
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
@@ -209,9 +211,10 @@
                               </div>
                              </a>
                             </div>
-                        </div>
-                    </div>
-                    <!--/item-->
+
+                        </div> <!-- row -->
+                    </div><!--/item-->
+
                     <div class="item">
                       <div class="row">
                             <div class="col-sm-4"> 
@@ -236,7 +239,7 @@
                              </a>
                             </div>
                         </div>
-                     
+                    
                     </div>
                     <!--/item-->
                     <div class="item">
@@ -262,104 +265,117 @@
                               </div>
                              </a>
                             </div>
-                        </div>
-                        <!--/row-->
-                    </div>
-                    <!--/item-->
-                </div>
-                <!--/carousel-inner--> 
+                        </div><!--/row-->
+                    </div><!--/item-->
+                </div><!--/carousel-inner--> 
                <a class="left carousel-control" href="#myCarousel2" data-slide="prev">‹</a>
 
                <a class="right carousel-control" href="#myCarousel2" data-slide="next">›</a>
-            </div>
-            <!--/myCarousel2-->
+            </div> <!--/myCarousel1-->
         </div>
         <!--/well-->
-    </div>
-    </div><!-- end of menu1 -->
-    <div id="menu2" class="tab-pane fade">
+    </div> <!--col md -->
+  </div><!-- end of menu1 --> 
+  <div id="menu2" class="tab-pane fade in">
     <div class="col-md-12">
         <div class="well">
-            <div id="myCarousel3" class="carousel slide" interval="false">
+            <div id="myCarousel3" class="carousel slide" >
                 
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                     <div class="item active">
                               <div class="row">
+
                             <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
-                              <%= image_tag("index/ecosport.jpg") %>
+                              <%= image_tag("index/bmw.jpeg") %>
                               </div>
                              </a>
                             </div>
+
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
-                              <%= image_tag("index/merc_de_coupe.jpg") %>
+                              <%= image_tag("index/toyota_fuel_cell.jpg") %>
                               </div>
                              </a>
                             </div>
+
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
-                              <%= image_tag("index/jaguar_f.jpeg") %>
+                              <%= image_tag("index/honda.jpg") %>
                               </div>
                              </a>
                             </div>
-                        </div>
-                    </div>
-                    <!--/item-->
+
+                        </div> <!-- row -->
+                    </div><!--/item-->
+
                     <div class="item">
                       <div class="row">
                             <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
-                              <%= image_tag("index/audi_r8.jpeg") %>
+                              <%= image_tag("index/honda.jpeg") %>
                               </div>
                              </a>
                             </div>
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
-                              <%= image_tag("index/audi.jpeg") %>
+                              <%= image_tag("index/bmw_z4.jpg") %>
                               </div>
                              </a>
                             </div>
                               <div class="col-sm-4"> 
                             <a href = "details.html">
                               <div class = "fill">
-                              <%= image_tag("index/bmw_z4.jpeg") %>
+                              <%= image_tag("index/duster.jpeg") %>
                               </div>
                              </a>
                             </div>
                         </div>
-                     
+                    
                     </div>
                     <!--/item-->
-                </div>
-                <!--/carousel-inner--> 
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-4"> 
+                            <a href = "details.html">
+                              <div class = "fill">
+                              <%= image_tag("index/toyota_fuel_cell.jpg") %>
+                              </div>
+                             </a>
+                            </div>
+                              <div class="col-sm-4"> 
+                            <a href = "details.html">
+                              <div class = "fill">
+                              <%= image_tag("index/audi.jpg") %>
+                              </div>
+                             </a>
+                            </div>
+                              <div class="col-sm-4"> 
+                            <a href = "details.html">
+                              <div class = "fill">
+                              <%= image_tag("index/audi_r8.jpg") %>
+                              </div>
+                             </a>
+                            </div>
+                        </div><!--/row-->
+                    </div><!--/item-->
+                </div><!--/carousel-inner--> 
                <a class="left carousel-control" href="#myCarousel3" data-slide="prev">‹</a>
 
                <a class="right carousel-control" href="#myCarousel3" data-slide="next">›</a>
-            </div>
-            <!--/myCarousel2-->
+            </div> <!--/myCarousel1-->
         </div>
         <!--/well-->
-    </div>
-    </div><!-- end of menu2 -->
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-    Car Description : This car is a ...
-    </div>
-    <div class="col-sm-4">
-    Car Description : This car is a ...
-    </div>
-    <div class="col-sm-4">
-    Car Description : This car is a ...
-    </div>
-</div>
+    </div> <!--col md -->
+  </div><!-- end of menu2 -->   
+  </div><!-- end of tab -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -413,6 +429,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <script>
 $( "#desc1" ).hide();
