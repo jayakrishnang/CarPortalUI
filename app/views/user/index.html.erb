@@ -15,7 +15,10 @@
           <div class="carousel-caption">
             <h1>BMW i8</h1>
            <!--  <p>As the first sports car with the consumption and emission values of a compact car. The strength of the plug-in hybrid lies, among other factors, in the perfect synchronisation of electric motor and combustion engine, which makes itself apparent in maximum efficiency and dynamics on the road. </p> -->
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+            Learn more
+            </button>
           </div>
         </div>
       </div>
@@ -27,7 +30,9 @@
           <div class="carousel-caption">
             <h1>Audi R8</h1>
             <!-- <p>The Audi R8 is a mid-engine, 2-seater super car, which uses Audi's trademark quattro permanent all-wheel drive system.The car is exclusively designed, developed, and manufacture+d by Audi AG's high performance private subsidiary company,</p> -->
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+            Learn more
+            </button>
           </div>
         </div>
       </div>
@@ -39,7 +44,9 @@
           <div class="carousel-caption">
             <h1>Renault Duster Los Pumas </h1>
     <!--           <p>The Renault Duster Los Pumas Special Edition has been introduced in the Argentinian market.The main addition to the Los Pumas edition is the ‘Adventure Kit’. </p> -->
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+            Learn more
+            </button>
           </div>
         </div>
       </div>
@@ -53,32 +60,109 @@
       <span class="sr-only">Next</span>
     </a>
   </div><!-- /.carousel -->
+  </br></br>
   <div class = "row" >   
     <div class="col-sm-4">
-      <a href = "details.html">
-        <div class = "fill">
-          <%= image_tag("index/bmw.jpeg") %>
+        <div class="img-responsive" id="image1" height="300" width="100">
+          <%= image_tag("index/bmw.jpeg",height:"300" ,width:"300",class:"img-circle",id:"img1")%>
         </div>
-      </a>
   </div>
+
   <div class="col-sm-4">
     <a href = "details.html">
-      <div class = "fill">
-        <%= image_tag("index/duster.jpg") %>
+      <div class="img-responsive">
+        <%= image_tag("index/duster.jpg",height:"300" ,width:"300",class:"img-circle") %>
       </div>
     </a>
   </div>
   <div class="col-sm-4">
     <a href = "details.html">
-      <div class = "fill">  
-        <%= image_tag("index/honda.jpg") %>
+      <div class="img-responsive">  
+        <%= image_tag("index/honda.jpg",height:"300" ,width:"300",class:"img-circle") %>
       </div>
     </a>
   </div>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-md-4 col-xs-5">.col-sm-4</div>
-    <div class="col-sm-6 col-md-4 col-xs-5">.col-sm-4</div>
-  <div class="col-md-4 col-xs-2">.col-sm-4</div>
+    <div class="col-sm-4">
+    Car Description : This car is a ...
+    </div>
+    <div class="col-sm-4">
+    Car Description : This car is a ...
+    </div>
+    <div class="col-sm-4">
+    Car Description : This car is a ...
+    </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">BMW i8</h4>
+      </div>
+      <div class="modal-body">
+        The BMW i8 is ready to revolutionise its vehicle class. As the first sports car with the consumption and emission values of a compact car. The strength of the plug-in hybrid lies, among other factors, in the perfect synchronisation of electric motor and combustion engine, which makes itself apparent in maximum efficiency and dynamics on the road. The first sports car that even accelerates the zeitgeist    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy now</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Audi R8</h4>
+      </div>
+      <div class="modal-body">
+      The Audi R8 is a mid-engine, 2-seater super car, which uses Audi's trademark quattro permanent all-wheel drive system.The car is exclusively designed, developed, and manufacture+d by Audi AG's high performance private subsidiary company  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Renault Duster Los Pumas</h4>
+      </div>
+      <div class="modal-body">
+      The Renault Duster Los Pumas Special Edition has been introduced in the Argentinian market.The main addition to the Los Pumas edition is the ‘Adventure Kit’.      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$( "#desc1" ).hide();
+$( "#img1" ).hover(
+          function() {
+            $( "#desc1" ).show();
+                    }, 
+         function() {
+          $( "#desc1" ).hide();
+            //alert("hi");
+           }
+); 
+// With the element initially hidden, we can show it slowly:
+$( "#clickme" ).click(function() {
+  $( "#img1" ).fadeOut( "slow", function() {
+    // Animation complete
+  });
+});
+</script>

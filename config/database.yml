@@ -2,7 +2,7 @@ development:
   adapter: mysql2
   database: car_portal
   username: root
-  password: root
+  password: manurajlr
   host: localhost
 
 
