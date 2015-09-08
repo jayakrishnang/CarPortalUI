@@ -61,27 +61,89 @@
     </a>
   </div><!-- /.carousel -->
   </br></br>
-  <div class = "row" >   
-    <div class="col-sm-4">
-        <div class="img-responsive" id="image1" height="300" width="100">
-          <%= image_tag("index/bmw.jpeg",height:"300" ,width:"300",class:"img-circle",id:"img1")%>
-        </div>
-  </div>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Popular</a></li>
+    <li><a data-toggle="tab" href="#menu1">Just Launched</a></li>
+    <li><a data-toggle="tab" href="#menu2">Upcoming Launches</a></li>
+  </ul>
+
+  <div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+   <div class = "row" >   
+    <div class="col-sm-4">
+      <a href = "details.html">
+        <div class = "fill">
+          <%= image_tag("index/bmw.jpeg") %>
+        </div>
+      </a>
+  </div>
   <div class="col-sm-4">
     <a href = "details.html">
-      <div class="img-responsive">
-        <%= image_tag("index/duster.jpg",height:"300" ,width:"300",class:"img-circle") %>
+      <div class = "fill">
+        <%= image_tag("index/duster.jpg") %>
       </div>
     </a>
   </div>
   <div class="col-sm-4">
     <a href = "details.html">
-      <div class="img-responsive">  
-        <%= image_tag("index/honda.jpg",height:"300" ,width:"300",class:"img-circle") %>
+      <div class = "fill">  
+        <%= image_tag("index/honda.jpg") %>
       </div>
     </a>
   </div>
+  </div><!-- end of row -->
+    </div><!-- end of home -->
+    <div id="menu1" class="tab-pane fade">
+      <div class = "row" >   
+    <div class="col-sm-4">
+      <a href = "details.html">
+        <div class = "fill">
+          <%= image_tag("index/duster.jpeg") %>
+        </div>
+      </a>
+  </div>
+  <div class="col-sm-4">
+    <a href = "details.html">
+      <div class = "fill">
+        <%= image_tag("index/honda.jpg") %>
+      </div>
+    </a>
+  </div>
+  <div class="col-sm-4">
+    <a href = "details.html">
+      <div class = "fill">  
+        <%= image_tag("index/bmw.jpg") %>
+      </div>
+    </a>
+  </div>
+  </div><!-- end of row -->
+    </div><!-- end of menu1 -->
+    <div id="menu2" class="tab-pane fade">
+    <div class = "row" >   
+    <div class="col-sm-4">
+      <a href = "details.html">
+        <div class = "fill">
+          <%= image_tag("index/honda.jpeg") %>
+        </div>
+      </a>
+  </div>
+  <div class="col-sm-4">
+    <a href = "details.html">
+      <div class = "fill">
+        <%= image_tag("index/bmw.jpg") %>
+      </div>
+    </a>
+  </div>
+  <div class="col-sm-4">
+    <a href = "details.html">
+      <div class = "fill">  
+        <%= image_tag("index/duster.jpg") %>
+      </div>
+    </a>
+  </div>
+  </div><!-- end of row -->
+    </div><!-- end of menu2 -->
   </div>
   <div class="row">
     <div class="col-sm-4">

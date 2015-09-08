@@ -28,15 +28,37 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Brands <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Audi</a></li>
-            <li><a href="#">BMW</a></li>
-            <li><a href="#">Honda</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Browse Other Brands</a></li>
-          </ul>
+         <li class="dropdown">
+            <a id="dLabel" role="button" data-toggle="dropdown" class="" data-target="#" href="/page.html">
+                Brands <span class="caret"></span>
+            </a>
+        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              <li class="divider"></li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">BMW</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">X3</a></li>
+                  <li><a tabindex="-1" href="#">X5</a></li>
+                  <li><a tabindex="-1" href="#">X1</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Mercedes Benz</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">C class</a></li>
+                  <li><a tabindex="-1" href="#">A class</a></li>
+                  <li><a tabindex="-1" href="#">E class</a></li>
+                </ul>
+              </li>
+                <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Audi</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Q7</a></li>
+                  <li><a tabindex="-1" href="#">A3</a></li>
+                  <li><a tabindex="-1" href="#">Q8</a></li>
+                </ul>
+              </li>
+            </ul>
         </li>
         <li><a href="#">Compare Car</a></li>
         <li><a href="#">Contact Us</a></li>
