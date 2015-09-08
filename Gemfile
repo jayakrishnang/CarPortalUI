@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # gem 'safe_attributes'
 gem 'cancan'
