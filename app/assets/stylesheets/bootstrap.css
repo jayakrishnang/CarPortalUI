@@ -3129,8 +3129,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #E53200;
+  border-color: #B02700;
 }
 .btn-primary:hover {
   color: #fff;
@@ -6476,6 +6476,7 @@ button.close {
 }
 .carousel-caption .btn {
   text-shadow: none;
+  background-color: #009393;
 }
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,

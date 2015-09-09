@@ -120,11 +120,6 @@ h2 {
     font-size: 23px;
 }
 
-
-
-
-
-
 /*used from startbootstrap*/
 header {
     text-align: center;
@@ -152,8 +147,8 @@ header .intro-text .skills {
 footer {
   padding: 0;
   font-size: 15px;
-  color: #33403C;
-  background-color: #edeff1;
+  color: #00454A;
+  background-color: #009393;
   }
 footer a {
   font-weight: 700;
@@ -166,7 +161,7 @@ footer p {
   }
 .footer-title {
   padding-top: 21px;
-  margin: 0 0 22px;
+  margin: 0 0 0px;
   font-size: 24px;
   line-height: 40px;
   }
@@ -180,37 +175,23 @@ footer p {
   }
 .footer-banner {
   min-height: 100px;
-  padding: 0 30px 30px;
+  padding: 0 30px 10px;
   margin-left: 42px;
   color: #d1f2eb;
-  background-color: #1abc9c;
+  background-color: #00585F;
   }
 .footer-banner .footer-title {
   color: #fff;
   }
 
-<div class = "col-md-12" align = "center">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="todo">
-        </div>
-        <div class="col-md-12">
-            <div class="todo-search">
-              <input class="todo-search-field" type="search" value="" placeholder="Search Your Car Here" />
-              <!-- <a href="#fakelink" class="btn btn-block btn-lg btn-success">Search</a> -->
-            </div>
-          </div><!-- /.todo -->
-        </div><!-- /.col-xs-4 -->
-  </div>
-(04:21:20  IST) Jayakrishnan Gopal: SEARCH
 /*Search Bar*/
 .todo-search {
   position: relative;
-  padding: 19px 25px 20px;
-  color: #34495e;
-  background: #1abc9c;
+  padding: 19px 25px 20px 20px;
+  color: #00454A;
+  background: #009393;
   background-size: 16px 16px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 6px 6px;
   }
 .todo-search:before {
   position: absolute;
@@ -254,6 +235,7 @@ footer p {
 
 body {
     overflow-x: hidden;
+    background-color: #F0EDBB;
 }
 
 p {
