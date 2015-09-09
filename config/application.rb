@@ -23,6 +23,7 @@ module CarPortal
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
