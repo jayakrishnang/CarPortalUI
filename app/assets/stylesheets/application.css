@@ -189,6 +189,63 @@ footer p {
   color: #fff;
   }
 
+<div class = "col-md-12" align = "center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="todo">
+        </div>
+        <div class="col-md-12">
+            <div class="todo-search">
+              <input class="todo-search-field" type="search" value="" placeholder="Search Your Car Here" />
+              <!-- <a href="#fakelink" class="btn btn-block btn-lg btn-success">Search</a> -->
+            </div>
+          </div><!-- /.todo -->
+        </div><!-- /.col-xs-4 -->
+  </div>
+(04:21:20  IST) Jayakrishnan Gopal: SEARCH
+/*Search Bar*/
+.todo-search {
+  position: relative;
+  padding: 19px 25px 20px;
+  color: #34495e;
+  background: #1abc9c;
+  background-size: 16px 16px;
+  border-radius: 6px 6px 0 0;
+  }
+.todo-search:before {
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  display: inline-block;
+  margin: -.5em 0 0 -1em;
+  font-family: 'Flat-UI-Icons';
+  font-size: 16px;
+  line-height: 17px;
+  }
+.todo-search-field {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #34495e;
+  text-indent: 0;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  }
+.todo-search-field::-moz-placeholder {
+  color: #34495e;
+  opacity: 1;
+  }
+.todo-search-field:-ms-input-placeholder {
+  color: #34495e;
+  }
+.todo-search-field::-webkit-input-placeholder {
+  color: #34495e;
+  }
+
 /*!
  * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -516,4 +573,46 @@ section.success a.active {
   font-size: 30px;
   padding-top:10%;
   width:5%;
+}
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
 }
