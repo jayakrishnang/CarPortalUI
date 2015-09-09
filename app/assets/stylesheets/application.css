@@ -598,3 +598,10 @@ section.success a.active {
 .back {
   transform: rotateY(180deg);
 }
+
+.dropshadow{
+ z-index: 100;
+ -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+ -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+ box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+}
